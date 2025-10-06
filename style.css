@@ -1,0 +1,56 @@
+/* Animasi transisi */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Tombol gaya mewah */
+.btn {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #9333ea, #ec4899);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+}
+
+/* Kartu biodata/pengurus */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
