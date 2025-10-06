@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Anggota Kelas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white min-h-screen p-10 fade-in">
+
+  <h1 class="text-4xl font-bold mb-8 text-center">📜 Biodata Anggota Kelas</h1>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Ryan</h2>
+      <p>Kelas: XI-A</p>
+      <p>Hobi: Menggambar</p>
+      <p>Cita-cita: Desainer</p>
+    </div>
+
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Emma</h2>
+      <p>Kelas: XI-A</p>
+      <p>Hobi: Membaca</p>
+      <p>Cita-cita: Penulis</p>
+    </div>
+
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Fizou</h2>
+      <p>Kelas: XI-A</p>
+      <p>Hobi: Bermain Musik</p>
+      <p>Cita-cita: Musisi</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <button onclick="goBack()" class="btn">⬅ Kembali</button>
+  </div>
+
+  <script>
+    function goBack() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => window.location.href = 'index.html', 500);
+    }
+  </script>
+</body>
+</html>
