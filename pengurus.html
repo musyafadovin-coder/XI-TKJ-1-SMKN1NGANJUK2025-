@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur Pengurus Kelas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-900 text-white min-h-screen p-10 fade-in">
+
+  <h1 class="text-4xl font-bold mb-8 text-center">🏫 Struktur Pengurus Kelas</h1>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Ketua Kelas</h2>
+      <p>Ryan</p>
+    </div>
+
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Wakil Ketua</h2>
+      <p>Emma</p>
+    </div>
+
+    <div class="card">
+      <h2 class="text-2xl font-semibold">Sekretaris</h2>
+      <p>Fizou</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <button onclick="goBack()" class="btn">⬅ Kembali</button>
+  </div>
+
+  <script>
+    function goBack() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => window.location.href = 'index.html', 500);
+    }
+  </script>
+</body>
+</html>
